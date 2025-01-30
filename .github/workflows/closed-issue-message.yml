@@ -9,10 +9,7 @@ jobs:
     permissions:
         issues: write
     steps:
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - uses: aws-actions/closed-issue-message@v1
+      - uses: aws-actions/closed-issue-message@refactor
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           message: |
